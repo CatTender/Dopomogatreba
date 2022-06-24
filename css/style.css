@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  /* max-width: 1920px; */
+}
+]
+
+.get-app {
+  font-family: "Nunito", sans-serif;
+  border: 1px solid #000;
+}
+.get-app__body {
+  padding-top: 100px;
+}
+.get-app__column {
+  min-height: 466px;
+  /* border: 1px solid #000; */
+  position: relative;
+  overflow: hidden;
+}
+
+.mobile {
+  position: absolute;
+  margin-top: 136px;
+  margin-left: -313px;
+}
+.mobile-shadow {
+  position: absolute;
+  margin-top: -14px;
+  margin-left: -313px;
+}
+.get-app__title {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 40px;
+  line-height: 48px;
+  color: #191f33;
+  padding-top: 100px;
+}
+.get-app__text {
+  font-size: 20px;
+  line-height: 32px;
+  color: #767e94;
+  margin-top: 20px;
+}
+.button-area {
+  display: flex;
+  flex-direction: ;
+  margin-top: 32px;
+}
+
+.button-area__button {
+  width: 164px;
+  height: 70px;
+  border: 1px solid #ebeef7;
+  border-radius: 8px;
+  margin-right: 16px;
+}
+
+.button-area__button_google {
+  background: url(../image/google-play_gray.svg) 17px 19px no-repeat;
+}
+.button-area__button_google:hover {
+  background: url(../image/google-play_blue.svg) 17px 19px no-repeat;
+}
+
+.button-area__button_apple {
+  background: url(../image/apple-gray.svg) 17px 19px no-repeat;
+}
+.button-area__button_apple:hover {
+  background: url(../image/apple-blue.svg) 17px 19px no-repeat;
+}
+
+.button-area__caption {
+  padding-left: 60px;
+  padding-top: 14px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #767e94;
+}
+.button-area__google,
+.button-area__apple {
+  padding-left: 60px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #191f33;
+}
