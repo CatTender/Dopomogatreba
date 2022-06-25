@@ -47,48 +47,92 @@ body {
   line-height: 32px;
   color: #767e94;
   margin-top: 20px;
+  margin-bottom: 32px;
 }
+
+/* button block */
 .button-area {
   display: flex;
-  flex-direction: ;
-  margin-top: 32px;
 }
 
-.button-area__button {
+.button-light {
+  /* for light background */
   width: 164px;
   height: 70px;
-  border: 1px solid #ebeef7;
   border-radius: 8px;
   margin-right: 16px;
-}
-
-.button-area__button_google {
-  background: url(../image/google-play_gray.svg) 17px 19px no-repeat;
-}
-.button-area__button_google:hover {
-  background: url(../image/google-play_blue.svg) 17px 19px no-repeat;
-}
-
-.button-area__button_apple {
-  background: url(../image/apple-gray.svg) 17px 19px no-repeat;
-}
-.button-area__button_apple:hover {
-  background: url(../image/apple-blue.svg) 17px 19px no-repeat;
-}
-
-.button-area__caption {
   padding-left: 60px;
   padding-top: 14px;
+  background: #ffffff;
+  border: 1px solid #ebeef7;
+  color: #191f33;
+  transition: all 0.2s ease;
+}
+.button-dark {
+  /* for dark background */
+  width: 164px;
+  height: 70px;
+  border-radius: 8px;
+  margin-right: 16px;
+  padding-left: 60px;
+  margin-top: 8px;
+  padding-top: 14px;
+  background: #191f33;
+  border: 1px solid #2e3447;
+  color: #ffffff;
+  transition: all 0.2s ease;
+}
+
+.caption {
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
   color: #767e94;
 }
-.button-area__google,
-.button-area__apple {
-  padding-left: 60px;
+.market {
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
-  color: #191f33;
+}
+/* --- icons --- */
+.google-light {
+  background-image: url(../image/google-play_gray.svg);
+  background-position: 17px center;
+  background-repeat: no-repeat;
+}
+.google-dark {
+  background-image: url(../image/google-play_white.svg);
+  background-position: 17px center;
+  background-repeat: no-repeat;
+}
+.apple-light {
+  background-position: 17px center;
+  background-repeat: no-repeat;
+  background-image: url(../image/apple-gray.svg);
+}
+.apple-dark {
+  background-position: 17px center;
+  background-repeat: no-repeat;
+  background-image: url(../image/apple-white.svg);
+}
+/* --- :hover --- */
+.button-light:hover {
+  box-shadow: 0px 12px 48px rgba(0, 44, 109, 0.1);
+}
+.button-dark:hover {
+  background: #2e3447;
+  margin-top: 0;
+  box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.24);
+}
+.google-light:hover,
+.google-dark:hover {
+  background-position: 17px center;
+  background-repeat: no-repeat;
+  background-image: url(../image/google-play_blue.svg);
+}
+.apple-light:hover,
+.apple-dark:hover {
+  background-position: 17px center;
+  background-repeat: no-repeat;
+  background-image: url(../image/apple-blue.svg);
 }
