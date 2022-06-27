@@ -6,41 +6,26 @@ a {
   text-decoration: none;
 }
 
-body {
-  /* max-width: 1920px; */
-}
-]
-
 .get-app {
+  margin-top: 100px;
   font-family: "Nunito", sans-serif;
-  border: 1px solid #000;
-}
-.get-app__body {
-  padding-top: 100px;
 }
 .get-app__column {
   min-height: 466px;
-  /* border: 1px solid #000; */
   position: relative;
-  overflow: hidden;
 }
-
-.mobile {
+.mobile-phones {
   position: absolute;
-  margin-top: 136px;
-  margin-left: -313px;
-}
-.mobile-shadow {
-  position: absolute;
-  margin-top: -14px;
-  margin-left: -313px;
+  right: 0%;
+  bottom: 0%;
 }
 .get-app__title {
   font-family: "Nunito Sans", sans-serif;
   font-size: 40px;
   line-height: 48px;
+  letter-spacing: 0.3px;
   color: #191f33;
-  padding-top: 100px;
+  margin-top: 100px;
 }
 .get-app__text {
   font-size: 20px;
@@ -53,14 +38,21 @@ body {
 /* button block */
 .button-area {
   display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+  width: 344px;
+  height: 70px;
 }
 
-.button-light {
-  /* for light background */
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   width: 164px;
   height: 70px;
   border-radius: 8px;
-  margin-right: 16px;
   padding-left: 60px;
   padding-top: 14px;
   background: #ffffff;
@@ -68,70 +60,41 @@ body {
   color: #191f33;
   transition: all 0.2s ease;
 }
-.button-dark {
-  /* for dark background */
-  width: 164px;
-  height: 70px;
-  border-radius: 8px;
-  margin-right: 16px;
-  padding-left: 60px;
-  margin-top: 8px;
-  padding-top: 14px;
-  background: #191f33;
-  border: 1px solid #2e3447;
-  color: #ffffff;
-  transition: all 0.2s ease;
-}
 
-.caption {
+.button__caption {
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
   color: #767e94;
 }
-.market {
+.button__app-market {
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
 }
 /* --- icons --- */
-.google-light {
+.google {
   background-image: url(../image/google-play_gray.svg);
   background-position: 17px center;
   background-repeat: no-repeat;
 }
-.google-dark {
-  background-image: url(../image/google-play_white.svg);
-  background-position: 17px center;
-  background-repeat: no-repeat;
-}
-.apple-light {
+
+.apple {
   background-position: 17px center;
   background-repeat: no-repeat;
   background-image: url(../image/apple-gray.svg);
 }
-.apple-dark {
-  background-position: 17px center;
-  background-repeat: no-repeat;
-  background-image: url(../image/apple-white.svg);
-}
+
 /* --- :hover --- */
-.button-light:hover {
+.button:hover {
   box-shadow: 0px 12px 48px rgba(0, 44, 109, 0.1);
 }
-.button-dark:hover {
-  background: #2e3447;
-  margin-top: 0;
-  box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.24);
-}
-.google-light:hover,
-.google-dark:hover {
+.google:hover {
   background-position: 17px center;
   background-repeat: no-repeat;
   background-image: url(../image/google-play_blue.svg);
 }
-.apple-light:hover,
-.apple-dark:hover {
+.apple:hover {
   background-position: 17px center;
   background-repeat: no-repeat;
   background-image: url(../image/apple-blue.svg);
