@@ -7,17 +7,37 @@ a {
 }
 
 .get-app {
+  display: flex;
+  flex-direction: row;
   margin-top: 100px;
   font-family: "Nunito", sans-serif;
-}
-.get-app__column {
   min-height: 466px;
-  position: relative;
+  min-width: 385px;
 }
-.mobile-phones {
+.get-app__column_image {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  padding: 0 0px;
+  overflow: hidden;
+}
+.get-app__column_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  padding: 20px;
+}
+.image {
   position: absolute;
-  right: 0%;
+  left: 12%;
   bottom: 0%;
+}
+.image-shadow {
+  position: absolute;
+  right: 12%;
+  bottom: 0%;
+  filter: drop-shadow(-20px 20px 20px rgba(0, 0, 0, 0.4));
 }
 .get-app__title {
   font-family: "Nunito Sans", sans-serif;
@@ -25,7 +45,7 @@ a {
   line-height: 48px;
   letter-spacing: 0.3px;
   color: #191f33;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 .get-app__text {
   font-size: 20px;
@@ -35,7 +55,7 @@ a {
   margin-bottom: 32px;
 }
 
-/* button block */
+/* --- button block --- */
 .button-area {
   display: flex;
   flex-direction: row;
@@ -45,7 +65,6 @@ a {
   width: 344px;
   height: 70px;
 }
-
 .button {
   display: flex;
   flex-direction: column;
@@ -60,7 +79,6 @@ a {
   color: #191f33;
   transition: all 0.2s ease;
 }
-
 .button__caption {
   font-weight: 400;
   font-size: 12px;
@@ -72,7 +90,7 @@ a {
   font-size: 16px;
   line-height: 24px;
 }
-/* --- icons --- */
+/* --- button-icons --- */
 .google {
   background-image: url(../image/google-play_gray.svg);
   background-position: 17px center;
@@ -80,14 +98,14 @@ a {
 }
 
 .apple {
+  background-image: url(../image/apple-gray.svg);
   background-position: 17px center;
   background-repeat: no-repeat;
-  background-image: url(../image/apple-gray.svg);
 }
 
-/* --- :hover --- */
+/* --- hover --- */
 .button:hover {
-  box-shadow: 0px 12px 48px rgba(0, 44, 109, 0.1);
+  box-shadow: 0px 10px 25px rgba(0, 44, 109, 0.1);
 }
 .google:hover {
   background-position: 17px center;
@@ -99,3 +117,113 @@ a {
   background-repeat: no-repeat;
   background-image: url(../image/apple-blue.svg);
 }
+
+/* Устройства Large (настольные компьютеры, менее 1200 пикселей) */
+@media (max-width: 1199.98px) {
+  .get-app {
+    margin-top: 50px;
+  }
+  .get-app__title {
+    margin-top: 40px;
+  }
+  .image {
+    left: 8%;
+  }
+  .image-shadow {
+    right: 8%;
+  }
+}
+/* Устройства Medium (планшеты, менее 992 пикселей) */
+@media (max-width: 991.98px) {
+  .get-app {
+    margin-top: 20px;
+    min-height: 350px;
+  }
+  .get-app__title {
+    font-size: 34px;
+    line-height: 40px;
+    margin-top: 20px;
+  }
+  .get-app__text {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .button-area {
+    gap: 12px;
+  }
+  .image {
+    left: 5%;
+  }
+  .image-shadow {
+    max-height: 95%;
+    right: 5%;
+  }
+}
+/* Устройства Small (телефоны с горизонтальной ориентацией, менее 768 пикселей) */
+@media (max-width: 767.98px) {
+  .get-app {
+    margin-top: 0px;
+  }
+  .get-app__column_image {
+    order: 2;
+    min-height: 400px;
+  }
+  .get-app__column_text {
+    order: 1;
+    width: auto;
+  }
+  .image {
+    left: 8%;
+  }
+  .image-shadow {
+    right: 8%;
+  }
+}
+
+/* Устройства X-Small (портретные телефоны, менее 576 пикселей) */
+/* @media (max-width: 575.98px) {
+  .image {
+    left: 5%;
+  }
+  .image-shadow {
+    right: 5%;
+  }
+} */
+
+/* Устройства XX-Small (портретные телефоны, менее 376 пикселей) */
+/* @media (max-width: 375.98px) {
+  .button {
+    width: 155px;
+    height: 70px;
+    padding-left: 55px;
+  }
+  .button-area {
+    gap: 10px;
+  }
+} */
+/* Устройства XX-Small (портретные телефоны, менее 360 пикселей) */
+/* @media (max-width: 354.98px) {
+  .get-app {
+    margin-top: 10;
+  }
+  .get-app__column_text {
+    margin-bottom: 20px;
+    padding: 20;
+  }
+  .get-app__title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .image {
+    display: none;
+  }
+  .image-shadow {
+    display: block;
+    max-height: 90%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  .button-area {
+    flex-direction: column;
+} */
