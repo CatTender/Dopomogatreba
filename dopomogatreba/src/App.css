@@ -92,13 +92,13 @@ a {
 }
 /* --- button-icons --- */
 .google {
-  background-image: url(../image/google-play_gray.svg);
+  background-image: url(/public/images/google-play_gray.svg);
   background-position: 17px center;
   background-repeat: no-repeat;
 }
 
 .apple {
-  background-image: url(../image/apple-gray.svg);
+  background-image: url(/public/images/apple-gray.svg);
   background-position: 17px center;
   background-repeat: no-repeat;
 }
@@ -110,12 +110,12 @@ a {
 .google:hover {
   background-position: 17px center;
   background-repeat: no-repeat;
-  background-image: url(../image/google-play_blue.svg);
+  background-image: url(/public/images/google-play_blue.svg);
 }
 .apple:hover {
   background-position: 17px center;
   background-repeat: no-repeat;
-  background-image: url(../image/apple-blue.svg);
+  background-image: url(/public/images/apple-blue.svg);
 }
 
 /* Устройства Large (настольные компьютеры, менее 1200 пикселей) */
@@ -179,51 +179,3 @@ a {
     right: 8%;
   }
 }
-
-/* Устройства X-Small (портретные телефоны, менее 576 пикселей) */
-/* @media (max-width: 575.98px) {
-  .image {
-    left: 5%;
-  }
-  .image-shadow {
-    right: 5%;
-  }
-} */
-
-/* Устройства XX-Small (портретные телефоны, менее 376 пикселей) */
-/* @media (max-width: 375.98px) {
-  .button {
-    width: 155px;
-    height: 70px;
-    padding-left: 55px;
-  }
-  .button-area {
-    gap: 10px;
-  }
-} */
-/* Устройства XX-Small (портретные телефоны, менее 360 пикселей) */
-/* @media (max-width: 354.98px) {
-  .get-app {
-    margin-top: 10;
-  }
-  .get-app__column_text {
-    margin-bottom: 20px;
-    padding: 20;
-  }
-  .get-app__title {
-    font-size: 32px;
-    line-height: 40px;
-  }
-  .image {
-    display: none;
-  }
-  .image-shadow {
-    display: block;
-    max-height: 90%;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-  }
-  .button-area {
-    flex-direction: column;
-} */
